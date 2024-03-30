@@ -18,20 +18,19 @@
  <p id="current-val"></p>
  <div id="test-output"></div>
 
- <section class="pyscript">
+<section class="pyscript">
     <div id="mpl"></div>
   
-        <script type="py">
-        <py-config>
-         packages = []
-         plugins = ["https://pyscript.net/latest/plugins/python/py_tutor.py"]
-        </py-config>
-         
-         def my_gen_function():
-           Element('mpl').element.innerText = "Artisan AI"
-        </script>
+    <py-config>
+        packages = []
+        plugins = ["https://pyscript.net/latest/plugins/python/py_tutor.py"]
+    </py-config>
   
- </section>
+    <script type="py">
+        def my_gen_function():
+            Element('mpl').element.innerText = "Artisan AI"
+    </script>
+</section>
   
 </body>
   
