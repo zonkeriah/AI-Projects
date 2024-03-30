@@ -21,17 +21,22 @@
 <section class="pyscript">
     <div id="mpl"></div>
   
-    <py-config>
-        packages = []
-        plugins = ["https://pyscript.net/latest/plugins/python/py_tutor.py"]
-    </py-config>
+
   
     <script type="py">
         def my_gen_function():
             Element('mpl').element.innerText = "Artisan AI"
     </script>
 </section>
-  
+
+<script type="text/javascript">
+    // Dynamically set up PyScript configuration
+    window.pyscript_config = {
+        packages: [],
+        plugins: ["https://pyscript.net/latest/plugins/python/py_tutor.py"]
+    };
+</script>
+ 
 </body>
   
 </html>
